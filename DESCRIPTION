@@ -12,3 +12,7 @@ Imports:
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    testthat
+URL: https://github.com/clementviolet/omnivor
+BugReports: https://github.com/clementviolet/omnivor/issues
