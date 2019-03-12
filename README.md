@@ -3,6 +3,8 @@
 omnivor
 =======
 
+[![Travis build status](https://travis-ci.org/clementviolet/omnivor.svg?branch=master)](https://travis-ci.org/clementviolet/omnivor)
+
 The goal of omnivor is to set up a friendly-user environement for networks analysis in ecology.
 
 Installation
