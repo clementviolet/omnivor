@@ -1,3 +1,5 @@
+^README\.Rmd$
 ^LICENSE\.md$
 ^omnivor\.Rproj$
 ^\.Rproj\.user$
+^brouillon\.R$
