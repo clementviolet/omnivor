@@ -1,0 +1,12 @@
+Package: omnivor
+Title: Ecological Networks Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Clément",
+           family = "VIOLET",
+           role = c("aut", "cre"),
+           email = "clement.violet@outlook.com")
+Description: Function for the analysis of ecological networks designed for ecologists.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
