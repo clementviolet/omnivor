@@ -16,3 +16,4 @@ Suggests:
     testthat
 URL: https://github.com/clementviolet/omnivor
 BugReports: https://github.com/clementviolet/omnivor/issues
+RoxygenNote: 6.1.1
