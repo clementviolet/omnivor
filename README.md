@@ -32,7 +32,7 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 -   \[X\] Species richness (number of node) ;
 -   \[X\] Linkage density ;
 -   \[X\] Clustering coefficient ;
--   \[ \] Characteristic path length ;
+-   \[X\] Characteristic path length ;
 -   \[ \] Mean food chain length ;
 -   \[ \] Short-weighted trophic level averaged ;
 -   \[ \] Percentage of top species in a web ;
