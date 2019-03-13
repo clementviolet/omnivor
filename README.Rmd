@@ -42,7 +42,8 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 - [X] Characteristic path length ;
 - [ ] Mean food chain length ;
 - [ ] Short-weighted trophic level averaged ;
-- [ ] Percentage of top species in a web ;
+- [X] Percentage of top species in a web ;
+- [X] Percentage of basl species in a web ;
 - [ ] Percentage of intermediate species ;
 - [ ] Percentage of omnivores in a web ;
 - [ ] Percentage of detritivores ;
