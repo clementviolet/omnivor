@@ -11,7 +11,7 @@
 #' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 cl <- function(graph, type = "global", ...){
 
-  stopifnot(class(graph) == "igraph")
+  stopifnot(class(graph) == "igraph" | is.character(type))
 
   return(igraph::transitivity(graph, type = type, eval(substitute(alist(...)))))
 }
