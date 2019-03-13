@@ -27,7 +27,8 @@ Package structure :
 
 List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 
--   \[ \] Connectance (multiple formulas) ;
+-   \[X\] Connectance ;
+-   \[ \] Connectance (bipartite network)
 -   \[X\] Species richness (number of node) ;
 -   \[X\] Linkage density ;
 -   \[ \] Clustering coefficient ;
