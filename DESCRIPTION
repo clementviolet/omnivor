@@ -7,11 +7,11 @@ Authors@R:
            role = c("aut", "cre"),
            email = "clement.violet@outlook.com")
 Description: Function for the analysis of ecological networks designed for ecologists.
-Imports: 
-  igraph
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    igraph
 Suggests: 
     testthat
 URL: https://github.com/clementviolet/omnivor
