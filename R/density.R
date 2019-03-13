@@ -1,8 +1,8 @@
 #' Linkage density
 #'
-#' @param graph
+#' @param graph an igraph object.
 #'
-#' @return A numeric, the linkage denisty of the graph.
+#' @return numeric: the linkage denisty of the graph.
 #' @export
 #'
 #' @examples

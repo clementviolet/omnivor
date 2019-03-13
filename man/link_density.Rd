@@ -4,13 +4,13 @@
 \alias{link_density}
 \title{Linkage density}
 \usage{
-link_density(igraph)
+link_density(graph)
 }
 \arguments{
-\item{igraph}{}
+\item{graph}{an igraph object.}
 }
 \value{
-A numeric, the linkage denisty of the graph.
+numeric: the linkage denisty of the graph.
 }
 \description{
 Linkage density

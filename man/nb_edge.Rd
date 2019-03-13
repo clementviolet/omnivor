@@ -4,13 +4,13 @@
 \alias{nb_edge}
 \title{Number of edge of a graph.}
 \usage{
-nb_edge(igraph)
+nb_edge(graph)
 }
 \arguments{
-\item{igraph}{object.}
+\item{graph}{an igraph object.}
 }
 \value{
-An integer : the number of edge of the graph.
+integer: the number of edge of the graph.
 }
 \description{
 Number of edge of a graph.

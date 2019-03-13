@@ -4,13 +4,13 @@
 \alias{nb_node}
 \title{Number of nodes of a graph.}
 \usage{
-nb_node(igraph)
+nb_node(graph)
 }
 \arguments{
-\item{igraph}{object.}
+\item{graph}{an igraph object.}
 }
 \value{
-An integer: the number of node of the graph.
+integer: the number of node of the graph.
 }
 \description{
 Number of nodes of a graph.

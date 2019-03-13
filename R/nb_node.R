@@ -1,8 +1,8 @@
 #' Number of nodes of a graph.
 #'
-#' @param graph object.
+#' @param graph an igraph object.
 #'
-#' @return An integer: the number of node of the graph.
+#' @return integer: the number of node of the graph.
 #' @export
 #'
 #' @examples
