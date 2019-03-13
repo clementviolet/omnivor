@@ -1,7 +1,7 @@
 #' Connectance of a graph
 #'
 #' @param graph an igraph object.
-#' @param loops logical: are pecies able to interact with themselves?
+#' @param loops logical: are species able to interact with themselves?
 #' @param directed logical: are interactions directed?
 #' @param unipartite not implemented yet
 #'

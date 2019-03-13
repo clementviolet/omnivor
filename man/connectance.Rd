@@ -9,7 +9,7 @@ connectance(graph, loops = TRUE, directed = TRUE)
 \arguments{
 \item{graph}{an igraph object.}
 
-\item{loops}{logical: are pecies able to interact with themselves?}
+\item{loops}{logical: are species able to interact with themselves?}
 
 \item{directed}{logical: are interactions directed?}
 
