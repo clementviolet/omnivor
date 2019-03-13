@@ -21,3 +21,6 @@ numeric: the value of the connectance.
 \description{
 Connectance of a graph
 }
+\references{
+Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
+}
