@@ -29,7 +29,7 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 
 -   \[ \] Connectance (multiple formulas) ;
 -   \[X\] Species richness (number of node) ;
--   \[ \] Linkage density ;
+-   \[X\] Linkage density ;
 -   \[ \] Clustering coefficient ;
 -   \[ \] Characteristic path length ;
 -   \[ \] Mean food chain length ;
