@@ -1,4 +1,4 @@
-#' Characteristic path length,
+#' Characteristic path length
 #'
 #' @param graph an igraph object.
 #' @param directed logical: is the graph directed?
