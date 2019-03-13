@@ -38,7 +38,7 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 - [ ] Connectance (bipartite network)
 - [X] Species richness (number of node) ;
 - [X] Linkage density ;
-- [ ] Clustering coefficient ;
+- [X] Clustering coefficient ;
 - [ ] Characteristic path length ;
 - [ ] Mean food chain length ;
 - [ ] Short-weighted trophic level averaged ;
