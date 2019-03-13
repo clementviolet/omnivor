@@ -10,8 +10,11 @@ nb_edge(igraph)
 \item{igraph}{object.}
 }
 \value{
-`integer` The number of edge of the graph.
+An integer : the number of edge of the graph.
 }
 \description{
 Number of edge of a graph.
+}
+\references{
+Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }
