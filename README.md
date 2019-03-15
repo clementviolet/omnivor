@@ -34,12 +34,14 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 -   \[X\] Clustering coefficient ;
 -   \[X\] Characteristic path length ;
 -   \[ \] Mean food chain length ;
--   \[ \] Short-weighted trophic level averaged ;
+-   \[X\] Prey-averaged trophic level ;
+-   \[X\] Shortest trophic level ;
+-   \[X\] Short-weighted trophic level averaged ;
 -   \[X\] Percentage of top species in a web ;
--   \[X\] Percentage of basl species in a web ;
--   \[ \] Percentage of intermediate species ;
+-   \[X\] Percentage of basal species in a web ;
+-   \[X\] Percentage of intermediate species ;
+-   \[X\] Percentage of canibal species in a web ;
 -   \[ \] Percentage of omnivores in a web ;
--   \[ \] Percentage of detritivores ;
 -   \[ \] Normalized standard deviation of generality ;
 -   \[ \] Normalized standard deviation of vulnerability ;
 -   \[ \] Normalized standard deviation of links ;
@@ -48,3 +50,7 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 List of other metrics to include (Delmas *et al.* (2019)) :
 
 -   \[ \] To be continued...
+
+Others :
+
+-   \[ \] Other trophic length metrics (Wiliams and Martinez (2004))
