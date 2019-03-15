@@ -1,3 +1,5 @@
+test.RData
+inter.RData
 .Rhistory
 .RData
 .Rproj.user
@@ -29,4 +31,3 @@ vignettes/*.pdf
 *.knit.md
 # Other
 brouillon.R
-inter.RData
