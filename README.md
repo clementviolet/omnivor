@@ -42,9 +42,9 @@ List of metrics to be added first (Dunne (2009) and, Vermaat *et al.* (2009)) :
 -   \[X\] Percentage of intermediate species ;
 -   \[X\] Percentage of canibal species in a web ;
 -   \[X\] Percentage of omnivores in a web ;
--   \[ \] Normalized standard deviation of generality ;
--   \[ \] Normalized standard deviation of vulnerability ;
--   \[ \] Normalized standard deviation of links ;
+-   \[X\] Normalized standard deviation of generality ;
+-   \[X\] Normalized standard deviation of vulnerability ;
+-   \[X\] Normalized standard deviation of links ;
 -   \[ \] Mean across taxa of the maximum trophic similarity of each taxon to other taxa
 
 List of other metrics to include (Delmas *et al.* (2019)) :
