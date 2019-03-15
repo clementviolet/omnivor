@@ -1,5 +1,6 @@
 #' Percentage of basal species
 #'
+#' Percentage of species without ressources.
 #' @param graph an igraph object.
 #'
 #' @return numeric: percentage of basal species.

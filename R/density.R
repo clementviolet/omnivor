@@ -1,5 +1,6 @@
 #' Linkage density
 #'
+#' Number of link per species.
 #' @param graph an igraph object.
 #'
 #' @return numeric: the linkage denisty of the graph.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/nb_node.R
 \name{nb_node}
 \alias{nb_node}
-\title{Number of nodes of a graph.}
+\title{Number of nodes of in a graph}
 \usage{
 nb_node(graph)
 }

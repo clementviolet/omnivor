@@ -13,7 +13,7 @@ link_density(graph)
 numeric: the linkage denisty of the graph.
 }
 \description{
-Linkage density
+Number of link per species.
 }
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.

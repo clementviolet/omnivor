@@ -1,5 +1,6 @@
 #' Characteristic path length
 #'
+#' The mean shortest set of links between species species pairs.
 #' @param graph an igraph object.
 #' @param directed logical: is the graph directed?
 #' @param ... others arguments passed to \code{igraph::mean_distance}.

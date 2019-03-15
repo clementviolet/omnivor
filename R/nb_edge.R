@@ -1,5 +1,6 @@
-#' Number of edge of a graph.
+#' Number of edge of in a graph
 #'
+#' Number of edge of in a graph.
 #' @param graph an igraph object.
 #'
 #' @return integer: the number of edge of the graph.

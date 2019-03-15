@@ -1,5 +1,6 @@
 #' Connectance of a graph
 #'
+#' Proportion of all possible links that are realized.
 #' @param graph an igraph object.
 #' @param loops logical: are species able to interact with themselves?
 #' @param directed logical: are interactions directed?

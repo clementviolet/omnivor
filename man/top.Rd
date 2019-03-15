@@ -13,5 +13,5 @@ top(graph)
 numeric: percentage of top species.
 }
 \description{
-Percentage of top species
+Percentage of species without consumers.
 }

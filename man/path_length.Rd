@@ -17,7 +17,7 @@ path_length(graph, directed = TRUE, ...)
 numeric: the characteristic path length.
 }
 \description{
-Characteristic path length
+The mean shortest set of links between species species pairs.
 }
 \references{
 Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.

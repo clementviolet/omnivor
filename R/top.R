@@ -1,5 +1,6 @@
 #' Percentage of top species
 #'
+#' Percentage of species without consumers.
 #' @param graph an igraph object.
 #'
 #' @return numeric: percentage of top species.

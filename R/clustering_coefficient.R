@@ -1,5 +1,6 @@
 #' Cluestering coefficient
 #'
+#' Probability that two taxa linked to the same taxon are linked.
 #' @param graph an igraph object.
 #' @param type caracter: the type of the transitivity to calculate. See \code{?igraph::transitivity} for more informations.
 #' @param ... others arguments passed to \code{igraph::transitivity}.

@@ -13,5 +13,5 @@ basal(graph)
 numeric: percentage of basal species.
 }
 \description{
-Percentage of basal species
+Percentage of species without ressources.
 }

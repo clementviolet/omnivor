@@ -1,5 +1,6 @@
-#' Number of nodes of a graph.
+#' Number of nodes of in a graph
 #'
+#' Number of nodes of a graph.
 #' @param graph an igraph object.
 #'
 #' @return integer: the number of node of the graph.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/nb_edge.R
 \name{nb_edge}
 \alias{nb_edge}
-\title{Number of edge of a graph.}
+\title{Number of edge of in a graph}
 \usage{
 nb_edge(graph)
 }
@@ -13,7 +13,7 @@ nb_edge(graph)
 integer: the number of edge of the graph.
 }
 \description{
-Number of edge of a graph.
+Number of edge of in a graph.
 }
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
