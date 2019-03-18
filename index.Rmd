@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# omnivor
+[![Travis build status](https://travis-ci.org/clementviolet/omnivor.svg?branch=master)](https://travis-ci.org/clementviolet/omnivor)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
+The goal of omnivor is to set up a friendly-user environement for networks analysis in ecology.
+
+## Installation
+
+You can install the released version of omnivor from github with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("clementviolet/omnivor")
+```
+
+## Licence
+This project is licensed under the GPL-3 Licence - see the [LICENSE.md](LICENCE.md) file for details.
