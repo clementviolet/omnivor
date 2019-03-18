@@ -29,7 +29,8 @@ This project is licensed under the GPL-3 Licence - see the
 Package structure :
 
   - [ ] Adopt a POO structure ;
-  - [ ] Use `pkgdown`
+  - [ ] Use `pkgdown` ;
+  - [ ] Add dataset ;
   - [ ] Create a vignette.
 
 List of metrics to be added first (Dunne (2009) and, Vermaat *et al.*
