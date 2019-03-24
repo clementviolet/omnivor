@@ -13,14 +13,14 @@ gen <- function(graph){
 
   stopifnot(class(graph) == "igraph")
 
-  node_name <- V(graph)$name
+  node_name <- igraph::V(graph)$name
 
   res <- data.frame(taxon = node_name,
-                    generality = rep(NA, times = length(res)))
+                    generality = rep(NA, times = length(node_name)))
 
   for(node in 1:length(node_name)){
 
-    res$generality[node] <- length(E(graph)[from(node_name[node])])
+    res$generality[node] <- length(igraph::E(graph)[from(node_name[node])])
   }
 
   return(res)
@@ -41,14 +41,14 @@ vul <- function(graph){
 
   stopifnot(class(graph) == "igraph")
 
-  node_name <- V(graph)$name
+  node_name <- igraph::V(graph)$name
 
   res <- data.frame(taxon = node_name,
-                    vulnerability = rep(NA, times = length(res)))
+                    vulnerability = rep(NA, times = length(node_name)))
 
   for(node in 1:length(node_name)){
 
-    res$vulnerability[node] <- length(E(graph)[to(node_name[node])])
+    res$vulnerability[node] <- length(igraph::E(graph)[to(node_name[node])])
   }
 
   return(res)
@@ -106,14 +106,14 @@ link <- function(graph){
 
   stopifnot(class(graph) == "igraph")
 
-  node_name <- V(graph)$name
+  node_name <- igraph::V(graph)$name
 
   res <- data.frame(taxon = node_name,
-                    nb_link = rep(NA, times = length(res)))
+                    nb_link = rep(NA, times = length(node_name)))
 
   for(node in 1:length(node_name)){
 
-    res$nb_link[node] <- length(E(graph)[adj(node_name[node])])
+    res$nb_link[node] <- length(igraph::E(graph)[adj(node_name[node])])
   }
 
   return(res)
