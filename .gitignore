@@ -31,3 +31,4 @@ vignettes/*.pdf
 *.knit.md
 # Other
 brouillon.R
+test2.RData
