@@ -7,6 +7,7 @@ warnings_are_errors: false
 
 before_deploy: Rscript -e 'remotes::install_cran("pkgdown")'
 deploy:
+  github_token: $GITHUB_TOKEN
   provider: script
   script: Rscript -e 'pkgdown::deploy_site_github()'
   skip_cleanup: true
