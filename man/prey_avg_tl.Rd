@@ -24,5 +24,7 @@ With :
 }
 }
 \references{
+Levine, S., 1980. Several measures of trophic structure applicable to complex food webs. Journal of Theoretical Biology
+
 Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
 }

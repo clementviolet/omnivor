@@ -81,52 +81,40 @@ short_tl <- function(graph){
 #' @export
 #'
 #' @examples
-#' @references Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
+#' @references Levine, S., 1980. Several measures of trophic structure applicable to complex food webs. Journal of Theoretical Biology
+#' 
+#' Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
+
+
 prey_avg_tl <- function(graph){
-
+  
   stopifnot(class(graph) == "igraph")
-
+  
+  # Should loops be removed?
+  # 
+  # if(any(igraph::is.loop(graph))){
+  #   warning("There is some loops in the graph: loops have been remove for the calculration.", immediate. = TRUE)
+  #   graph <- igraph::simplify(graph, remove.multiple = TRUE, remove.loops = TRUE)
+  # }
+  
   mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph))) # The consumers are in lines, preys in columns.
-
-  tl_df <- data.frame(taxon = row.names(mat), # Returned df
-                      trophic_length = rep(NA, nrow(mat)),
-                      stringsAsFactors = FALSE)
-
-  while(!sum(is.na(tl_df[, 2])) == 0){ # While df is not full of trophic level
-
-    if(sum(is.na(tl_df[, 2])) == nrow(tl_df)){ # initialization of the trophic_level df for basal
-
-      for(ressource in 1:nrow(mat[rowSums(mat) == 0,])){
-
-        name <- row.names(mat[rowSums(mat) == 0,])
-
-        tl <- 1 + sum(mat[name, ] * 0 / nrow(mat))
-
-        tl_df[tl_df$taxon == name, 2] <- tl
-      }
-    }
-
-    # Reshaping df to keep only row that consume ressources which trophic level was already determined.
-    temp <- mat[rowSums(mat) <= length(name) & rowSums(mat[, name]) > 0 & !rownames(mat) %in% name, ]
-    temp <- temp[, colSums(temp) > 0]
-
-    for(taxon in 1:nrow(temp)){ # Calculating trophic length for
-
-      r_name <- row.names(temp)[taxon]
-
-      c_name <- temp[r_name, ]
-      c_name <- names(c_name[which(c_name > 0)])
-
-      tl <- 1 + sum(temp[r_name, c_name] * tl_df[tl_df$taxon %in% c_name, 2] / length(c_name))
-
-      tl_df[tl_df$taxon == r_name, 2] <- tl
-    }
-
-    name <- tl_df[!is.na(tl_df$trophic_length),1] # Keep track of trophic level already resolved.
-
+  
+  Q <- mat
+  
+  for(i in 1:ncol(mat)){
+    
+    Q[i, ] <- mat[i, ] / rowSums(mat)[i] # Diet percentage of each species
+    
   }
-
-  return(tl_df)
+  
+  Q[is.na(Q)] <- 0 # Remove NaN
+  
+  
+  tl_df <- as.data.frame(solve(diag(ncol(Q)) - Q) %*% rep.int(1, times = ncol(Q)))
+  
+  names(tl_df) <- "trophic_level"
+  
+  tl_df
 }
 
 #' Short-weighted trophic level
