@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Clément",
            family = "VIOLET",
            role = c("aut", "cre"),
-           email = "clement.violet@outlook.com",
+           email = "clement.violet@etudiant.univ-brest.fr",
            comment = c(ORCID = "0000-0001-6217-5891"))
 Description: Function for the analysis of ecological networks designed for ecologists.
 License: GPL-3
