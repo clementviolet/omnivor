@@ -27,7 +27,7 @@ short_tl <- function(graph){
 
     tl_df[cons, 1] <- consumers[cons]
 
-    temp <- suppressWarnings(igraph::shortest_paths(graph, from = V(graph)[consumers[cons]], to = V(graph)[ressources], output = "vpath"))
+    temp <- suppressWarnings(igraph::shortest_paths(graph, from = igraph::V(graph)[consumers[cons]], to = igraph::V(graph)[ressources], output = "vpath"))
 
     temp[sapply(temp, is.null)] <- NULL
 
@@ -97,22 +97,40 @@ prey_avg_tl <- function(graph){
   #   graph <- igraph::simplify(graph, remove.multiple = TRUE, remove.loops = TRUE)
   # }
   
-  mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph))) # The consumers are in lines, preys in columns.
-  
-  Q <- mat
-  
-  for(i in 1:ncol(mat)){
+  if(is.null(igraph::edge_attr(graph, name = "value"))){
     
-    Q[i, ] <- mat[i, ] / rowSums(mat)[i] # Diet percentage of each species
+    mat2 <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph_2)))
+    
+  } # Check if there is an attribute value contenaing the value of the interaction
+  else{
+    
+    mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph, attr = "value")))
+    
+    Q <- mat
     
   }
   
-  Q[is.na(Q)] <- 0 # Remove NaN
+  col_sum <- colSums(mat2)
   
+  Q <- mat
   
-  tl_df <- as.data.frame(solve(diag(ncol(Q)) - Q) %*% rep.int(1, times = ncol(Q)))
+  if(any(col_sum >= 1)){ # Check if the values of the matrix are stored in presence/absence or in proportion of dietary.
+    
+    Q <- mat
+    
+    for(i in 1:ncol(mat)){
+      
+      Q[i, ] <- mat[i, ] / rowSums(mat)[i] # Diet percentage of each species
+      
+    }
+    
+  } 
   
-  names(tl_df) <- "trophic_level"
+  Q[is.na(Q)] <- 0
+  
+  y <- c(solve(diag(ncol(Q)) - Q) %*% rep.int(1, times = ncol(Q)))
+  
+  tl_df <- data.frame(taxon = row.names(Q), trophic_level = y)
   
   tl_df
 }
