@@ -17,7 +17,7 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   if(method == "shortest"){
 
-    cat("Methode: \"shortest trophic level\"")
+    cat("Methode: \"shortest trophic level\"\n")
 
     omni <- omnivore_short_tl(graph)
 
@@ -25,7 +25,7 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   } else {
 
-    cat("Methode: \"average prey trophic level\"")
+    cat("Methode: \"average prey trophic level\"\n")
 
     omni <- omnivore_avg_prey_tl(graph)
 
@@ -127,7 +127,7 @@ omnivore_short_tl <- function(graph){
 #' @keywords internal
 omnivore_avg_prey_tl <- function(graph){
 
-  tl <- prey_avg_tl(graph)
+  tl <- omnivor::prey_avg_tl(graph)
 
   mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph))) # The consumers are in lines, preys in columns.
 
