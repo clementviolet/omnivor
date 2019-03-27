@@ -1,6 +1,6 @@
 Package: omnivor
 Title: Ecological Networks Analysis
-Version: 0.0.0.9000
+Version: 0.0.0.950
 Authors@R: 
     person(given = "Clément",
            family = "VIOLET",
