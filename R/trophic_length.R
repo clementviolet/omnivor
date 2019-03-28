@@ -106,17 +106,14 @@ prey_avg_tl <- function(graph){
     
     mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph, attr = "value")))
     
-    Q <- mat
-    
   }
-  
-  col_sum <- colSums(mat)
   
   Q <- mat
   
-  if(any(col_sum >= 1)){ # Check if the values of the matrix are stored in presence/absence or in proportion of dietary.
-    
-    Q <- mat
+  col_sum <- colSums(mat)
+  
+  
+  if(any(round(col_sum, 1) >= 1)){ # Check if the values of the matrix are stored in presence/absence or in proportion of dietary.
     
     for(i in 1:ncol(mat)){
       
@@ -153,7 +150,7 @@ short_wght_tl <- function(graph){
 
   prey.avg <- prey_avg_tl(graph)
 
-  tl_df <- data.frame(taxon = prey.avg$taxon, trophic_level = rowMeans(cbind(short.tl$trophic_level, prey.avg$trophic_length)))
+  tl_df <- data.frame(taxon = prey.avg$taxon, trophic_level = rowMeans(cbind(short.tl$trophic_level, prey.avg$trophic_level)))
 
   return(tl_df)
 
