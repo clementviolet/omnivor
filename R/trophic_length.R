@@ -99,7 +99,7 @@ prey_avg_tl <- function(graph){
   
   if(is.null(igraph::edge_attr(graph, name = "value"))){
     
-    mat2 <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph_2)))
+    mat <- as.data.frame(as.matrix(igraph::as_adjacency_matrix(graph)))
     
   } # Check if there is an attribute value contenaing the value of the interaction
   else{
@@ -110,7 +110,7 @@ prey_avg_tl <- function(graph){
     
   }
   
-  col_sum <- colSums(mat2)
+  col_sum <- colSums(mat)
   
   Q <- mat
   
