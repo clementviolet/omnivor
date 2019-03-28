@@ -8,6 +8,8 @@ omnivore(graph, method = c("shortest", "average_prey"))
 }
 \arguments{
 \item{graph}{an igraph object.}
+
+\item{method}{computation method for the trophic level. Must be one of `shortest` or `average_prey`. See \code{\link{short_tl}} and \code{\link{prey_avg_tl}} for more informations.}
 }
 \value{
 dataframe. First column containing the taxa and second if the taxon is omnivore or not.

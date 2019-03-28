@@ -3,6 +3,7 @@
 #' Retrive if a taxon is omnivore or not, based on shortest trophic level method.
 #'
 #' @param graph an igraph object.
+#' @param method computation method for the trophic level. Must be one of `shortest` or `average_prey`. See \code{\link{short_tl}} and \code{\link{prey_avg_tl}} for more informations.
 #'
 #' @return dataframe. First column containing the taxa and second if the taxon is omnivore or not.
 #' @export
