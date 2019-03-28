@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">omnivor</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.950</span>
       </span>
     </div>
 
@@ -110,14 +110,14 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>mean_tl</span>(<span class='no'>graph</span>)</pre>
+    <pre class="usage"><span class='fu'>mean_tl</span>(<span class='no'>graph</span>, <span class='kw'>method</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"shortest"</span>, <span class='st'>"average_prey"</span>, <span class='st'>"weighted"</span>))</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>graph</th>
-      <td><p>an igraph object.</p></td>
+      <th>method</th>
+      <td><p>computation method for the trophic level. Must be one of `shortest`, `average_prey` `weighted`. See <code><a href='short_tl.html'>short_tl</a></code>,<code><a href='prey_avg_tl.html'>prey_avg_tl</a></code>, <code><a href='short_wght_tl.html'>short_wght_tl</a></code> for more informations.</p></td>
     </tr>
     </table>
     
