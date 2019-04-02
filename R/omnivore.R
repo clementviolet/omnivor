@@ -18,7 +18,7 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   if(method == "shortest"){
 
-    cat("Methode: \"shortest trophic level\"\n")
+    message("Methode: \"shortest trophic level\"\n")
 
     omni <- omnivore_short_tl(graph)
 
@@ -26,7 +26,7 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   } else {
 
-    cat("Methode: \"average prey trophic level\"\n")
+    message("Methode: \"average prey trophic level\"\n")
 
     omni <- omnivore_avg_prey_tl(graph)
 
@@ -55,12 +55,12 @@ which_omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   if(method == "shortest"){
 
-    cat("Methode: \"shortest trophic level\"")
+    message("Methode: \"shortest trophic level\"")
 
     omnivore_short_tl(graph)
 
   } else {
-    cat("Methode: \"average prey trophic level\"")
+    message("Methode: \"average prey trophic level\"")
 
     omnivore_avg_prey_tl(graph)
   }
