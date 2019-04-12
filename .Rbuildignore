@@ -1,3 +1,4 @@
+^index\.Rmd$
 ^test\.RData$
 ^inter\.RData$
 ^\.travis\.yml$
