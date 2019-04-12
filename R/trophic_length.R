@@ -110,10 +110,8 @@ prey_avg_tl <- function(graph){
   
   Q <- mat
   
-  col_sum <- colSums(mat)
   
-  
-  if(any(round(col_sum, 1) >= 1)){ # Check if the values of the matrix are stored in presence/absence or in proportion of dietary.
+  if(all(unlist(Q) == 0 | unlist(Q) == 1)){ # Check if the values of the matrix are stored in presence/absence (TRUE) or in proportion of dietary.
     
     for(i in 1:ncol(mat)){
       
