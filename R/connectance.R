@@ -14,7 +14,8 @@
 connectance <- function(graph, loops = TRUE, directed = TRUE){
 
   stopifnot(class(graph) == "igraph" | is.logical(loops) | is.logical(directed))
-
+  
+  message(unique(igraph::edge_attr(graph)$network_id))
   if(loops & directed){
 
     res <- igraph::gsize(graph)/(igraph::gorder(graph)^2)
