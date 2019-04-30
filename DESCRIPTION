@@ -4,7 +4,7 @@ Version: 0.0.0.950
 Authors@R: 
     c(
       person(given   = "Clément",
-             family  = "VIOLET",
+             family  = "Violet",
              role    = c("aut", "cre"),
              email   = "clement.violet@etudiant.univ-brest.fr",
              comment = c(ORCID = "0000-0001-6217-5891")),
