@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Generality — gen • omnivor</title>
+<title>Mean number of vulnerability — vul_mean • omnivor</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Generality — gen" />
+<meta property="og:title" content="Mean number of vulnerability — vul_mean" />
 
-<meta property="og:description" content="The number of prey of a taxon." />
+<meta property="og:description" content="Mean number of predators of a taxon for the whole food web." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,18 +99,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Generality</h1>
+    <h1>Mean number of vulnerability</h1>
     <small class="dont-index">Source: <a href='https://github.com/clementviolet/omnivor/blob/master/R/strategy.R'><code>R/strategy.R</code></a></small>
-    <div class="hidden name"><code>gen.Rd</code></div>
+    <div class="hidden name"><code>vul_mean.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>The number of prey of a taxon.</p>
+    <p>Mean number of predators of a taxon for the whole food web.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>gen</span>(<span class='no'>graph</span>)</pre>
+    <pre class="usage"><span class='fu'>vul_mean</span>(<span class='no'>graph</span>, <span class='kw'>std</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -119,11 +119,11 @@
       <th>graph</th>
       <td><p>an igraph object.</p></td>
     </tr>
+    <tr>
+      <th>std</th>
+      <td><p>should the number of predator per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.</p></td>
+    </tr>
     </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>dataframe: generality of each taxon.</p>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
@@ -136,8 +136,6 @@
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
-
       <li><a href="#references">References</a></li>
           </ul>
 
