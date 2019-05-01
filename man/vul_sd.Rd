@@ -16,5 +16,5 @@ numeric: the normalized standard deviation of vulnerability.
 The number of predators of a taxon standardized by L/S.
 }
 \references{
-Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

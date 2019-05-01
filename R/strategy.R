@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 gen <- function(graph){
 
   stopifnot(class(graph) == "igraph")
@@ -26,6 +26,55 @@ gen <- function(graph){
   return(res)
 }
 
+#' Normalized standard deviation of generality
+#'
+#' The number of prey of a taxon standardized by L/S.
+#'
+#' @param graph an igraph object.
+#'
+#' @return numeric: the normalized standard deviation of generality.
+#' @export
+#'
+#' @examples
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
+gen_sd <- function(graph){
+  
+  stopifnot(class(graph) == "igraph")
+  
+  res <- gen(graph)
+  
+  res[, 2] <- res[, 2] * 1 / link_density(graph)
+  return(res)
+  
+}
+
+#' Mean Generality
+#'
+#' Mean number of prey per taxon for the whole food web.
+#'
+#' @param graph an igraph object.
+#' @param std should the number of prey per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
+gen_mean <- function(graph, std = FALSE){
+  
+  stopifnot(class(graph) == "igraph")
+  
+  if(std == TRUE){
+    
+    res <- gen_sd(graph)
+    
+  }else{
+    res <- gen(graph)
+  }
+  
+  mean(res[, 2])
+}
+
 #' Vulnerability
 #'
 #' The number of predators of a taxon.
@@ -36,7 +85,7 @@ gen <- function(graph){
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 vul <- function(graph){
 
   stopifnot(class(graph) == "igraph")
@@ -54,25 +103,6 @@ vul <- function(graph){
   return(res)
 }
 
-#' Normalized standard deviation of generality
-#'
-#' The number of prey of a taxon standardized by L/S.
-#'
-#' @param graph an igraph object.
-#'
-#' @return numeric: the normalized standard deviation of generality.
-#' @export
-#'
-#' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
-gen_sd <- function(graph){
-
-  stopifnot(class(graph) == "igraph")
-
-  return(sd(gen(graph)[, 2])*link_density(graph))
-
-}
-
 #' Normalized standard deviation of vulnerability
 #'
 #' The number of predators of a taxon standardized by L/S.
@@ -83,12 +113,43 @@ gen_sd <- function(graph){
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 vul_sd <- function(graph){
 
   stopifnot(class(graph) == "igraph")
 
-  return(sd(vul(graph)[, 2])*link_density(graph))
+  res <- vul(graph)
+  
+  res[, 2] <- res[, 2] * (1 / link_density(graph))
+  
+  return(res)
+}
+
+#' Mean number of vulnerability
+#'
+#' Mean number of predators of a taxon for the whole food web.
+#'
+#' @param graph an igraph object.
+#' @param std should the number of predator per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
+vul_mean <- function(graph, std = FALSE){
+  
+  stopifnot(class(graph) == "igraph")
+  
+  if(std == TRUE){
+    
+    res <- vul(graph)
+    
+  }else{
+    res <- vul_sd(graph)
+  }
+  
+  return(mean(res[, 2]))
 }
 
 #' Link
@@ -101,7 +162,7 @@ vul_sd <- function(graph){
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 link <- function(graph){
 
   stopifnot(class(graph) == "igraph")
@@ -126,15 +187,46 @@ link <- function(graph){
 #'
 #' @param graph an igraph object.
 #'
-#' @return
+#' @return dataframe: standardized number of links of each taxon.
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 link_sd <- function(graph){
 
   stopifnot(class(graph) == "igraph")
+  
+  res <- link(graph)
+  
+  res[, 2] <- res[, 2] * (1 / link_density(graph))
+  
+  return(res)
 
-  return(sd(link(graph)[, 2]*link_density(graph)))
+}
 
+#' Mean number of links
+#'
+#' Mean number of consumers and resources per taxon for the whole food web.
+#'
+#' @param graph an igraph object.
+#' @param std should the number of links per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.
+#'
+#' @return the mean number of consumers and resources per taxon for the whole food web.
+#' @export
+#'
+#' @examples
+#' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
+link_mean <- function(graph, std = FALSE){
+  
+  stopifnot(class(graph) == "igraph")
+  
+  if(std == TRUE){
+    
+    res <- link_sd(graph)
+    
+  }else{
+    res <- link(graph)
+  }
+  
+  return(mean(res[, 2]))
 }

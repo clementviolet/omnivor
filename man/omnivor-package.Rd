@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Clément VIOLET \email{clement.violet@etudiant.univ-brest.fr} (0000-0001-6217-5891)
+\strong{Maintainer}: Clément Violet \email{clement.violet@etudiant.univ-brest.fr} (0000-0001-6217-5891)
 
 Authors:
 \itemize{

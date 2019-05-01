@@ -16,5 +16,5 @@ dataframe: generality of each taxon.
 The number of prey of a taxon.
 }
 \references{
-Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }
