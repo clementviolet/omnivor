@@ -143,10 +143,10 @@ vul_mean <- function(graph, std = FALSE){
   
   if(std == TRUE){
     
-    res <- vul(graph)
+    res <- vul_sd(graph)
     
   }else{
-    res <- vul_sd(graph)
+    res <- vul(graph)
   }
   
   return(mean(res[, 2]))
