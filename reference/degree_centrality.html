@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrive if a taxon is omnivore — which_omnivore • omnivor</title>
+<title>Degreee centrality — degree_centrality • omnivor</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Retrive if a taxon is omnivore — which_omnivore" />
+<meta property="og:title" content="Degreee centrality — degree_centrality" />
 
-<meta property="og:description" content="Retrive if a taxon is omnivore or not, based on average prey trophic level or shortest trophic level method." />
+<meta property="og:description" content="Degree centrality is the count of the number of interaction for each node. It can be partitioned between in-degree and out-degree for directed networks." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,39 +99,39 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrive if a taxon is omnivore</h1>
-    <small class="dont-index">Source: <a href='https://github.com/clementviolet/omnivor/blob/master/R/omnivore.R'><code>R/omnivore.R</code></a></small>
-    <div class="hidden name"><code>which_omnivore.Rd</code></div>
+    <h1>Degreee centrality</h1>
+    <small class="dont-index">Source: <a href='https://github.com/clementviolet/omnivor/blob/master/R/centrality.R'><code>R/centrality.R</code></a></small>
+    <div class="hidden name"><code>degree_centrality.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Retrive if a taxon is omnivore or not, based on average prey trophic level or shortest trophic level method.</p>
+    <p>Degree centrality is the count of the number of interaction for each node. It can be partitioned between in-degree and out-degree for directed networks.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>which_omnivore</span>(<span class='no'>graph</span>, <span class='kw'>method</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"shortest"</span>, <span class='st'>"average_prey"</span>))</pre>
+    <pre class="usage"><span class='fu'>degree_centrality</span>(<span class='no'>graph</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>graph</th>
-      <td><p>an igraph object.</p></td>
+      <td><p>an <code>igraph</code> object.</p></td>
     </tr>
     <tr>
-      <th>method</th>
-      <td><p>computation method for the trophic level. Must be one of `shortest` or `average_prey`. See <code><a href='short_tl.html'>short_tl</a></code> and <code><a href='prey_avg_tl.html'>prey_avg_tl</a></code> for more informations.</p></td>
+      <th>...</th>
+      <td><p>others arguments passed to <code><a href='https://www.rdocumentation.org/packages/igraph/topics/degree'>igraph::degree()</a></code></p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>dataframe. First column containing the taxa and second if the taxon is omnivore or not.</p>
+    <p><code>numeric</code> a vector containing the degree of each node.</p>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., &amp; Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.</p>
+    <p>Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.</p>
     
 
   </div>
