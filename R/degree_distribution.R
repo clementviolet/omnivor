@@ -2,7 +2,7 @@
 #' 
 #' Compute the degree distribution of a network
 #' @param graph an igraph object.
-#' @param ... others arguments passed to \code{igraph::degree_distribution}
+#' @param ... others arguments passed to \code{\link[=degree]{igraph::degree_distribution}}
 #'
 #' @return named numeric : a numeric vector of the degree distribution.
 #' @export

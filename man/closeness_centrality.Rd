@@ -9,7 +9,7 @@ closeness_centrality(graph, ...)
 \arguments{
 \item{graph}{an \code{igraph} object.}
 
-\item{...}{others arguments passed to \code{\link[igraph::closeness]{igraph::closeness()}}}
+\item{...}{others arguments passed to \code{\link[=closeness]{igraph::closeness()}}}
 }
 \value{
 \code{numeric} a vector containing closeness centrality coefficients for each node.

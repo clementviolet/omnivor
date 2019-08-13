@@ -7,6 +7,8 @@
 mean_tl(graph, method = c("shortest", "average_prey", "weighted"))
 }
 \arguments{
+\item{graph}{an \code{igraph} object.}
+
 \item{method}{computation method for the trophic level. Must be one of `shortest`, `average_prey` `weighted`. See \code{\link{short_tl}},\code{\link{prey_avg_tl}}, \code{\link{short_wght_tl}} for more informations.}
 }
 \value{

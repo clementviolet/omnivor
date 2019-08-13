@@ -12,8 +12,6 @@ connectance(graph, loops = TRUE, directed = TRUE)
 \item{loops}{logical: are species able to interact with themselves?}
 
 \item{directed}{logical: are interactions directed?}
-
-\item{unipartite}{not implemented yet}
 }
 \value{
 numeric: the value of the connectance.

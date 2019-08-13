@@ -9,7 +9,7 @@ degree_centrality(graph, ...)
 \arguments{
 \item{graph}{an \code{igraph} object.}
 
-\item{...}{others arguments passed to \code{\link[igraph::degree]{igraph::degree()}}}
+\item{...}{others arguments passed to \code{\link[=degree]{igraph::degree()}}}
 }
 \value{
 \code{numeric} a vector containing the degree of each node.

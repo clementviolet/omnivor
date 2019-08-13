@@ -9,13 +9,15 @@ betweeness_centrality(graph, normalized = TRUE, ...)
 \arguments{
 \item{graph}{an \code{igraph} object.}
 
-\item{...}{others arguments passed to \code{\link[igraph::betweeness]{igraph::betweenness()}}}
+\item{normalized}{\code{logical} should the coefficients be normalized? The formula would be: \deqn{C_{Bnorm} = 2 \times \frac{C_{B}}{(n-1)(n-2)}} Where \eqn{C_{B}} is the betweeness coefficent vector and \eqn{n} is the number of nodes.}
+
+\item{...}{others arguments passed to \code{\link[=betweenness]{igraph::betweenness()}}}
 }
 \value{
 \code{numeric} a vector containing betweeness centrality coefficients for each node.
 }
 \description{
-Betweeness centrality is a measure of the number of time a node is between pairs of nodes. The value can be normalized by the number, see details for more informations.
+#' Betweeness centrality is a measure of the number of time a node is between pairs of nodes. The value can be normalized by the number, see details for more informations.
 }
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.

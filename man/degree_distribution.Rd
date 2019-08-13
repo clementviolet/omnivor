@@ -9,7 +9,7 @@ degree_distribution(graph, ...)
 \arguments{
 \item{graph}{an igraph object.}
 
-\item{...}{others arguments passed to \code{igraph::degree_distribution}}
+\item{...}{others arguments passed to \code{\link[=degree]{igraph::degree_distribution}}}
 }
 \value{
 named numeric : a numeric vector of the degree distribution.

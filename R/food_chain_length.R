@@ -2,7 +2,7 @@
 #'
 #' Mean trophic level for the food web. Also called "mean food chain length".
 #'
-#' @param graph
+#' @param graph an \code{igraph} object.
 #' @param method computation method for the trophic level. Must be one of `shortest`, `average_prey` `weighted`. See \code{\link{short_tl}},\code{\link{prey_avg_tl}}, \code{\link{short_wght_tl}} for more informations.
 #'
 #' @return numeric: the mean trophic level

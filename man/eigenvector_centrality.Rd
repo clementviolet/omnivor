@@ -9,13 +9,13 @@ eigenvector_centrality(graph, full = FALSE, ...)
 \arguments{
 \item{graph}{an \code{igraph} object.}
 
-\item{full}{\code{logical} should all the \code{igraph::eigen_centrality()} output be returned or only the scores?}
+\item{full}{\code{logical} should all the \code{\link[=eigen_centrality]{igraph::eigen_centrality()}} output be returned or only the scores?}
 
-\item{...}{others arguments passed to \code{\link[igraph::eigen_centrality]{igraph::eigen_centrality()}}}
+\item{...}{others arguments passed to \code{\link[=eigen_centrality]{igraph::eigen_centrality()}}}
 }
 \value{
 \code{numeric} a vector containing eigenvector centrality coefficients for each node.
-\code{list} see \code{\link[igraph::eigen_centrality]{igraph::eigen_centrality()}} documentation for more informations.
+\code{list} see \code{\link[=eigen_centrality]{igraph::eigen_centrality()}} documentation for more informations.
 }
 \description{
 Eigenvector centrality is a meaure of the relative importance of each node in the network by giving a score based on the nomber of links of each node.

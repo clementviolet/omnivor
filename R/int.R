@@ -1,9 +1,9 @@
 #' Percentage of intermediate taxa
 #'
 #' Percentage of taxa with both consumer and ressources.
-#' @param graph
+#' @param graph an \code{igraph} object.
 #'
-#' @return numeric: percentage of intermediate taxa
+#' @return \code{numeric} percentage of intermediate taxa
 #' @export
 #'
 #' @examples

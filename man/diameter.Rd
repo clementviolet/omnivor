@@ -9,7 +9,7 @@ diameter(graph, ...)
 \arguments{
 \item{graph}{an \code{igraph} object.}
 
-\item{...}{others arguments passed to \code{\link[igraph::diameter]{igraph::degree.distribution}}}
+\item{...}{others arguments passed to \code{\link[=diameter]{igraph::diameter}}}
 }
 \value{
 \code{numeric}: the diameter of the graph.

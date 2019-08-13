@@ -7,10 +7,10 @@
 inter(graph)
 }
 \arguments{
-\item{graph}{}
+\item{graph}{an \code{igraph} object.}
 }
 \value{
-numeric: percentage of intermediate taxa
+\code{numeric} percentage of intermediate taxa
 }
 \description{
 Percentage of taxa with both consumer and ressources.

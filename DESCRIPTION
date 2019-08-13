@@ -14,11 +14,12 @@ Authors@R:
              role    = c("aut"))
       )
 Description: Function for the analysis of ecological networks designed for ecologists.
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    igraph
+    igraph,
+    stats
 Suggests: 
     testthat
 URL: https://github.com/clementviolet/omnivor

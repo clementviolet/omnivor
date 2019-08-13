@@ -22,7 +22,7 @@ gen <- function(graph){
 
     res$generality[node] <- length(igraph::E(graph)[from(node_name[node])])
   }
-
+  
   return(res)
 }
 

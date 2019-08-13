@@ -3,7 +3,7 @@
 #' Diameter of a network.
 #'
 #' @param graph an \code{igraph} object.
-#' @param ... others arguments passed to \code{\link[igraph::diameter]{igraph::degree.distribution}}
+#' @param ... others arguments passed to \code{\link[=diameter]{igraph::diameter}}
 #'
 #' @return \code{numeric}: the diameter of the graph.
 #' @export

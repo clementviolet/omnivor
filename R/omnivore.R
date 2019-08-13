@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   stopifnot(class(graph) == "igraph")
@@ -41,12 +41,12 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 #' Retrive if a taxon is omnivore or not, based on average prey trophic level or shortest trophic level method.
 #'
 #' @param graph an igraph object.
-#'
+#' @param method computation method for the trophic level. Must be one of `shortest` or `average_prey`. See \code{\link{short_tl}} and \code{\link{prey_avg_tl}} for more informations.
 #' @return dataframe. First column containing the taxa and second if the taxon is omnivore or not.
 #' @export
 #'
 #' @examples
-#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 which_omnivore <- function(graph, method = c("shortest", "average_prey")){
 
   stopifnot(class(graph) == "igraph")
@@ -97,11 +97,11 @@ omnivore_short_tl <- function(graph){
 
     prey_name <- names(which(colSums(temp) >0))
 
-    if(is.na(var(tl[tl$taxon %in% prey_name, 2]))){ # Case of a predator using only one ressource
+    if(is.na(stats::var(tl[tl$taxon %in% prey_name, 2]))){ # Case of a predator using only one ressource
 
       res[res$Predator == predator_name[pred], 2] <- FALSE
 
-    } else if(var(tl[tl$taxon %in% prey_name, 2]) == 0){
+    } else if(stats::var(tl[tl$taxon %in% prey_name, 2]) == 0){
 
       res[res$Predator == predator_name[pred], 2] <- FALSE
 
@@ -146,11 +146,11 @@ omnivore_avg_prey_tl <- function(graph){
 
     prey_name <- names(which(colSums(temp) >0))
 
-    if(is.na(var(tl[tl$taxon %in% prey_name, 2]))){ # Case of a predator using only one ressource
+    if(is.na(stats::var(tl[tl$taxon %in% prey_name, 2]))){ # Case of a predator using only one ressource
 
       res[res$Predator == predator_name[pred], 2] <- FALSE
 
-    } else if(var(tl[tl$taxon %in% prey_name, 2]) == 0){
+    } else if(stats::var(tl[tl$taxon %in% prey_name, 2]) == 0){
 
       res[res$Predator == predator_name[pred], 2] <- FALSE
 
