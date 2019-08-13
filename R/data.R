@@ -1,0 +1,9 @@
+#' Food web of the western Aleutian Islands
+#'
+#'A dataset containing food web of a Sea otter-dominated community in the western Aleutian Islands.
+#'
+#'@format An \code{igraph} object with 15 nodes and 26 edges. Each interactions are recorded in the direction predator => prey.
+#'
+#'@source Adapted from Simenstad et al., 1978. Simenstad, C.A., Estes, J.A. & Kenyon, K.W., 1978. Aleuts, Sea Otters, and Alternate Stable-State Communities. Science.
+#'Downloaded from Mangal. Vissault S, Cazelles K, Bergeron G, Mercier B, Violet C, Gravel D, Poisot T (2019). _rmangal: An R package to interact with Mangal database_. R package version 1.9.0.9000, <URL: https://mangal-wg.github.io/rmangal/>.
+"aleutian"
