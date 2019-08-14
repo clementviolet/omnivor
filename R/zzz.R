@@ -1,0 +1,1 @@
+utils::globalVariables(c('from', '.from', 'to', '.to', 'adj')) # Add these variables for using them in strategy.R file.
