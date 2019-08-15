@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Connectance of a graph — connectance" />
 
-<meta property="og:description" content="Proportion of all possible links that are realized." />
+<meta property="og:description" content="Proportion of all possible links that are realized. In a directed unipartite network \(C = \frac{L}{S^2}\), in a directed newtork where species cannot interact with themselves \(C = \frac{L}{S(S-1)}\). In undirected newtork, if species cannot interact with themselves \(C = \frac{L}{S\frac{S-1}{2}}\) otherwise \(C = \frac{L}{S\frac{S-1}{2}}\). Where \(L\) is the number of links and \(S\) the number of species." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Proportion of all possible links that are realized.</p>
+    <p>Proportion of all possible links that are realized. In a directed unipartite network \(C = \frac{L}{S^2}\), in a directed newtork where species cannot interact with themselves \(C = \frac{L}{S(S-1)}\). In undirected newtork, if species cannot interact with themselves \(C = \frac{L}{S\frac{S-1}{2}}\) otherwise \(C = \frac{L}{S\frac{S-1}{2}}\). Where \(L\) is the number of links and \(S\) the number of species.</p>
     
     </div>
 
@@ -138,6 +138,12 @@
     <p>Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.</p>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>aleutian</span>)
+
+<span class='fu'>connectance</span>(<span class='no'>aleutian</span>)</div><div class='output co'>#&gt; [1] 0.1155556</div><div class='input'>
+<span class='fu'>connectance</span>(<span class='no'>aleutian</span>, <span class='kw'>loops</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] 0.1238095</div><div class='input'>
+<span class='fu'>connectance</span>(<span class='no'>aleutian</span>, <span class='kw'>directed</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] 0.2166667</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -147,7 +153,9 @@
       <li><a href="#value">Value</a></li>
 
       <li><a href="#references">References</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
