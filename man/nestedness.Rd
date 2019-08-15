@@ -25,3 +25,10 @@ Nestedness of a graph.
 
 \code{nestedness_total()} return the whole nestedness as the mean of the two values.
 }
+\examples{
+data(aleutian)
+
+nestedness(aleutian)
+
+nestedness_total(aleutian)
+}

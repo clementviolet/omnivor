@@ -12,6 +12,11 @@
 #' @return \code{numeric} the nestedness.
 #' @export
 #' @examples
+#' data(aleutian)
+#' 
+#' nestedness(aleutian)
+#' 
+#' nestedness_total(aleutian)
 nestedness <- function(graph, transpose = FALSE){
   
   stopifnot(class(graph) == "igraph")
@@ -25,14 +30,12 @@ nestedness <- function(graph, transpose = FALSE){
   numerator   <- numeric(length = ncol(graph) - 1)
   denominator <- numeric(length = ncol(graph) - 1)
   
-  for(j in 2:ncol(graph)){
-    for(i in 1:ncol(graph)-1){
-      
-      numerator[i]   <- sum(graph[i, ] == graph[, j] & graph[i, ] == 1 & graph[, j] == 1)
-      
-      denominator[i] <- min(sum(graph[i, ]), sum(graph[, j]))
-      
-    }
+  for(i in 1:ncol(graph)-1){
+    
+    numerator[i]   <- sum(graph[i, ] != 0 & graph[i+1, ] != 0)
+    
+    denominator[i] <- min(sum(graph[i, ]), sum(graph[i+1, ]))
+    
   }
   
   sum(numerator) / sum(denominator)
