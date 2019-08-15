@@ -15,6 +15,11 @@ dataframe contening the taxons and the trophic level.
 \description{
 Shortest trophic level is calculated as follow : 1 + the shortest chain length from a consumer to a basal species.
 }
+\examples{
+data(aleutian)
+
+short_tl(aleutian)
+}
 \references{
 Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
 }

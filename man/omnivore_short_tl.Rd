@@ -15,4 +15,9 @@ dataframe. First column containing the taxa and second if the taxon is omnivore 
 \description{
 Retrive if a taxon is omnivore or not, based on shortest trophic level method.
 }
+\examples{
+data(aleutian)
+
+omnivore_short_tl(aleutian)
+}
 \keyword{internal}

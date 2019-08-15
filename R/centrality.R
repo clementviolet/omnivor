@@ -9,6 +9,9 @@
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' degree_centrality(aleutian)
 #' @references Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 degree_centrality <- function(graph, ...){
   
@@ -26,6 +29,9 @@ degree_centrality <- function(graph, ...){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' closeness_centrality(aleutian)
 #' @references Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 closeness_centrality <- function(graph, ...){
   
@@ -47,6 +53,9 @@ closeness_centrality <- function(graph, ...){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' betweeness_centrality(aleutian)
 #' @references Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 betweeness_centrality <- function(graph, normalized = TRUE, ...){
   
@@ -68,6 +77,9 @@ betweeness_centrality <- function(graph, normalized = TRUE, ...){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' eigenvector_centrality(aleutian)
 #' @references Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 eigenvector_centrality <- function(graph, full = FALSE, ...){
   if(full == FALSE){

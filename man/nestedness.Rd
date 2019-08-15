@@ -29,6 +29,5 @@ Nestedness of a graph.
 data(aleutian)
 
 nestedness(aleutian)
-
 nestedness_total(aleutian)
 }

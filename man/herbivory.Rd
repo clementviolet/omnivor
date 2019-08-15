@@ -15,6 +15,11 @@ herbivory(graph)
 \description{
 Percentage of herbivore/detrivore species in the newtork
 }
+\examples{
+data(aleutian)
+
+herbivory(aleutian)
+}
 \references{
 Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 }

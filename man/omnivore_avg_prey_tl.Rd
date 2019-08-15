@@ -15,4 +15,9 @@ dataframe. First column containing the taxa and second if the taxon is omnivore 
 \description{
 Retrive if a taxon is omnivore or not, based on average prey trophic level method.
 }
+\examples{
+data(aleutian)
+
+omnivore_avg_prey_tl(aleutian)
+}
 \keyword{internal}

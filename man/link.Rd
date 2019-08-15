@@ -15,6 +15,11 @@ dataframe: number of links of each taxon.
 \description{
 Number of consumers and resources per taxon.
 }
+\examples{
+data(aleutian)
+
+link(aleutian)
+}
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

@@ -20,6 +20,11 @@ eigenvector_centrality(graph, full = FALSE, ...)
 \description{
 Eigenvector centrality is a meaure of the relative importance of each node in the network by giving a score based on the nomber of links of each node.
 }
+\examples{
+data(aleutian)
+
+eigenvector_centrality(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

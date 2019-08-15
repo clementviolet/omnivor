@@ -17,6 +17,11 @@ named numeric : a numeric vector of the degree distribution.
 \description{
 Compute the degree distribution of a network
 }
+\examples{
+data(aleutian)
+
+degree_distribution(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

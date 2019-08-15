@@ -23,6 +23,11 @@ With :
     \item \eqn{n_j} the number of specie consumed by the specie \eqn{j}.
 }
 }
+\examples{
+data(aleutian)
+
+prey_avg_tl(aleutian)
+}
 \references{
 Levine, S., 1980. Several measures of trophic structure applicable to complex food webs. Journal of Theoretical Biology
 

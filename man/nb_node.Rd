@@ -15,6 +15,11 @@ integer: the number of node of the graph.
 \description{
 Number of nodes of a graph.
 }
+\examples{
+data(aleutian)
+
+nb_node(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

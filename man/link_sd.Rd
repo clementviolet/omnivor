@@ -15,6 +15,11 @@ dataframe: standardized number of links of each taxon.
 \description{
 Number of consumers and resources per taxon standardized by L/S.
 }
+\examples{
+data(aleutian)
+
+link_sd(aleutian)
+}
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

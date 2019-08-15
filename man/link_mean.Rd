@@ -17,6 +17,11 @@ the mean number of consumers and resources per taxon for the whole food web.
 \description{
 Mean number of consumers and resources per taxon for the whole food web.
 }
+\examples{
+data(aleutian)
+
+link_mean(aleutian)
+}
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

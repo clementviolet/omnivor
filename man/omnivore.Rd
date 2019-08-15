@@ -17,6 +17,11 @@ dataframe. First column containing the taxa and second if the taxon is omnivore 
 \description{
 Retrive if a taxon is omnivore or not, based on shortest trophic level method.
 }
+\examples{
+data(aleutian)
+
+omnivore(aleutian, method = "aver")
+}
 \references{
 Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 }

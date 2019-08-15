@@ -17,6 +17,11 @@ degree_centrality(graph, ...)
 \description{
 Degree centrality is the count of the number of interaction for each node. It can be partitioned between in-degree and out-degree for directed networks.
 }
+\examples{
+data(aleutian)
+
+degree_centrality(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

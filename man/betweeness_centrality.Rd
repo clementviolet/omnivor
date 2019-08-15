@@ -19,6 +19,11 @@ betweeness_centrality(graph, normalized = TRUE, ...)
 \description{
 #' Betweeness centrality is a measure of the number of time a node is between pairs of nodes. The value can be normalized by the number, see details for more informations.
 }
+\examples{
+data(aleutian)
+
+betweeness_centrality(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

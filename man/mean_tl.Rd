@@ -17,6 +17,11 @@ numeric: the mean trophic level
 \description{
 Mean trophic level for the food web. Also called "mean food chain length".
 }
+\examples{
+data(aleutian)
+
+mean_tl(aleutian, method = "weighted")
+}
 \references{
 Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 }

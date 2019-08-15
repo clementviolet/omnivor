@@ -15,6 +15,11 @@ dataframe: vulnerability of each taxon.
 \description{
 The number of predators of a taxon.
 }
+\examples{
+data(aleutian)
+
+vul(aleutian)
+}
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

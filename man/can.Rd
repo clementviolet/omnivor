@@ -15,3 +15,11 @@ numeric: Percentage of cannibals
 \description{
 Percentage of cannibals species in a food web.
 }
+\examples{
+data(aleutian)
+
+can(aleutian)
+}
+\references{
+Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
+}

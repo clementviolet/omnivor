@@ -15,6 +15,11 @@ numeric: the normalized standard deviation of generality.
 \description{
 The number of prey of a taxon standardized by L/S.
 }
+\examples{
+data(aleutian)
+
+gen_sd(aleutian)
+}
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 }

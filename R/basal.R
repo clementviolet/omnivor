@@ -7,7 +7,10 @@
 #' @export
 #'
 #' @examples
-#' @references
+#' data(aleutian)
+#' 
+#' basal(aleutian)
+#' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 basal <- function(graph){
 
   stopifnot(class(graph) == "igraph")

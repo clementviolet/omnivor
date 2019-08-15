@@ -9,6 +9,9 @@
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' omnivore(aleutian, method = "aver")
 #' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 omnivore <- function(graph, method = c("shortest", "average_prey")){
 
@@ -46,6 +49,9 @@ omnivore <- function(graph, method = c("shortest", "average_prey")){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' which_omnivore(aleutian)
 #' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic stats::variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 which_omnivore <- function(graph, method = c("shortest", "average_prey")){
 
@@ -76,6 +82,9 @@ which_omnivore <- function(graph, method = c("shortest", "average_prey")){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' omnivore_short_tl(aleutian)
 #' @keywords internal
 omnivore_short_tl <- function(graph){
 
@@ -125,6 +134,9 @@ omnivore_short_tl <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' omnivore_avg_prey_tl(aleutian)
 #' @keywords internal
 omnivore_avg_prey_tl <- function(graph){
 

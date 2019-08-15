@@ -4,10 +4,13 @@
 #'
 #' @param graph an igraph object.
 #'
-#' @return dataframe: generality of each taxon.
+#' @return dataframe: name of the taxon and its number of prey
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' gen(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 gen <- function(graph){
 
@@ -36,6 +39,9 @@ gen <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' gen_sd(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 gen_sd <- function(graph){
   
@@ -55,10 +61,13 @@ gen_sd <- function(graph){
 #' @param graph an igraph object.
 #' @param std should the number of prey per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.
 #'
-#' @return
+#' @return \code{numeric} mean number of prey per taxon.
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' gen_mean(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 gen_mean <- function(graph, std = FALSE){
   
@@ -85,6 +94,9 @@ gen_mean <- function(graph, std = FALSE){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' vul(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 vul <- function(graph){
 
@@ -113,6 +125,9 @@ vul <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' vul_sd(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 vul_sd <- function(graph){
 
@@ -132,10 +147,13 @@ vul_sd <- function(graph){
 #' @param graph an igraph object.
 #' @param std should the number of predator per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.
 #'
-#' @return
+#' @return \code{numeric} mean number of predator per taxon.
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' vul_mean(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 vul_mean <- function(graph, std = FALSE){
   
@@ -162,6 +180,9 @@ vul_mean <- function(graph, std = FALSE){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' link(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 link <- function(graph){
 
@@ -191,6 +212,9 @@ link <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' link_sd(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 link_sd <- function(graph){
 
@@ -215,6 +239,9 @@ link_sd <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' link_mean(aleutian)
 #' @references Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.
 link_mean <- function(graph, std = FALSE){
   

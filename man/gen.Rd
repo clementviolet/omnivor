@@ -10,10 +10,15 @@ gen(graph)
 \item{graph}{an igraph object.}
 }
 \value{
-dataframe: generality of each taxon.
+dataframe: name of the taxon and its number of prey
 }
 \description{
 The number of prey of a taxon.
+}
+\examples{
+data(aleutian)
+
+gen(aleutian)
 }
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.

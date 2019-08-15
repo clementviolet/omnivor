@@ -11,8 +11,16 @@ vul_mean(graph, std = FALSE)
 
 \item{std}{should the number of predator per taxon be standardized by 1/(LS)? Value must be `TRUE` or `FALSE`.}
 }
+\value{
+\code{numeric} mean number of predator per taxon.
+}
 \description{
 Mean number of predators of a taxon for the whole food web.
+}
+\examples{
+data(aleutian)
+
+vul_mean(aleutian)
 }
 \references{
 Williams, R. J., & Martinez, N. D. (2000). Simple rules yield complex food webs. Nature.

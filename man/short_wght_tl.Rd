@@ -15,6 +15,11 @@ dataframe contening the taxons and the trophic level.
 \description{
 Short-weighted trophic level is the average of shortest trophic level and prey-averaged trophic level.
 }
+\examples{
+data(aleutian)
+
+short_wght_tl(aleutian)
+}
 \references{
 Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
 }

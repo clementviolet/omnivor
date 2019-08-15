@@ -17,6 +17,11 @@ closeness_centrality(graph, ...)
 \description{
 Closeness centrality is a measure of the proximity of a node to all others.
 }
+\examples{
+data(aleutian)
+
+closeness_centrality(aleutian)
+}
 \references{
 Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 }

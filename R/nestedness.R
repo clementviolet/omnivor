@@ -15,8 +15,6 @@
 #' data(aleutian)
 #' 
 #' nestedness(aleutian)
-#' 
-#' nestedness_total(aleutian)
 nestedness <- function(graph, transpose = FALSE){
   
   stopifnot(class(graph) == "igraph")
@@ -43,6 +41,9 @@ nestedness <- function(graph, transpose = FALSE){
 }
 
 #' @rdname nestedness
+#' @examples
+#' nestedness_total(aleutian)
+#' @export
 nestedness_total <- function(graph){
 
   stopifnot(class(graph) == "igraph")

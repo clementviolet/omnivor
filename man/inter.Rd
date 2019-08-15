@@ -10,8 +10,16 @@ inter(graph)
 \item{graph}{an \code{igraph} object.}
 }
 \value{
-\code{numeric} percentage of intermediate taxa
+\code{numeric} percentage of intermediate taxa.
 }
 \description{
 Percentage of taxa with both consumer and ressources.
+}
+\examples{
+data(aleutian)
+
+inter(aleutian)
+}
+\references{
+Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 }

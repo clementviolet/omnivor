@@ -7,6 +7,9 @@
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' link_density(aleutian)
 #' @references Delmas, E., Besson, M., Brice, M.-H., Burkle, L. A., Dalla Riva, G. V., Fortin, M.-J., … Poisot, T. (2019). Analysing ecological networks of species interactions. Biological Reviews.
 link_density <- function(graph){
 

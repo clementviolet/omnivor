@@ -7,6 +7,9 @@
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' short_tl(aleutian)
 #' @references Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
 short_tl <- function(graph){
 
@@ -81,6 +84,9 @@ short_tl <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' prey_avg_tl(aleutian)
 #' @references Levine, S., 1980. Several measures of trophic structure applicable to complex food webs. Journal of Theoretical Biology
 #' 
 #' Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
@@ -139,6 +145,9 @@ prey_avg_tl <- function(graph){
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' short_wght_tl(aleutian)
 #' @references Williams, R.J. & Martinez, N.D., 2004. Limits to Trophic Levels and Omnivory in Complex Food Webs: Theory and Data. The American Naturalist
 short_wght_tl <- function(graph){
 

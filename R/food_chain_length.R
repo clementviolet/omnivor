@@ -9,6 +9,9 @@
 #' @export
 #'
 #' @examples
+#' data(aleutian)
+#' 
+#' mean_tl(aleutian, method = "weighted")
 #' @references Baiser, B., Gotelli, N. J., Buckley, H. L., Miller, T. E., & Ellison, A. M. (2012). Geographic variation in network structure of a nearctic aquatic food web. Global Ecology and Biogeography.
 mean_tl <- function(graph, method = c("shortest", "average_prey", "weighted")){
 
