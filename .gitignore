@@ -28,4 +28,5 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 # Other
-/docs/*
+docs/*
+docs/

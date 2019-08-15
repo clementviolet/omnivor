@@ -7,3 +7,6 @@
 ^omnivor\.Rproj$
 ^\.Rproj\.user$
 ^brouillon\.R$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
