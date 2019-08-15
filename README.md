@@ -5,6 +5,7 @@
 
 [![Travis build
 status](https://travis-ci.org/clementviolet/omnivor.svg?branch=master)](https://travis-ci.org/clementviolet/omnivor)
+[![codecov](https://codecov.io/gh/clementviolet/omnivor/branch/master/graph/badge.svg)](https://codecov.io/gh/clementviolet/omnivor)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 The goal of omnivor is to set up a friendly-user environement for
